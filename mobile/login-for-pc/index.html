@@ -83,6 +83,17 @@
         // Initialize Firebase
         const app = initializeApp(firebaseConfig);
       </script>
+             <script>
+              import { getDatabase, ref } from "firebase/database"
+   
+               const db = getDatabase(app) // <-- Pass in the initialized app
+   
+               //Creating the reference (The path in db you are trying to read/write/update)
+               const dbRef = ref("/users/" + data1)
+               var data1 = ("emailinfo")
+               //search email
+               get(document.getElementById("email"))
+          </script>
     <script src="scan.js"></script>
     <h1><b>login by enter your email adress
         <input type="email">
@@ -92,6 +103,9 @@
         <datagrid id="logininfo">
 
         </datagrid>
+        <a href=""><button class="button">
+          
+        </button></a>
     </b></h1>
 </body>
 </html>
