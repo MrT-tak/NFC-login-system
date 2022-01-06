@@ -27,3 +27,16 @@ const { data, encoding, recordType } = record
         console.log(`data-on-NFC: ${text}`)
 }
 document.getElementById("logininfo").innerText("data:"+text)
+
+const writeText = async(text) => {
+  try {
+    const writer = new NDEFWriter()
+    await writer.write(text)
+  } catch (error) {
+    console.error(error)
+  }
+}
+//The code that not written in blog
+const write = async () => {
+  
+}

@@ -8,11 +8,13 @@
 </head>
 <body>
     <script src="scan.js"></script>
-    <h1><b>login by enter your email adress
-        <input type="email">
-        then clicking
-        <a onclick="scan">here</a>
-        login data
+    <h1><b>
+        <input type="text" id="text-to-write">
+        <a onclick="writeText"><button class="button">
+            writeText
+        </button></a>
+        <a onclick="scan">scan</a>
+        login data:
         <datagrid id="logininfo">
 
         </datagrid>
