@@ -26,7 +26,7 @@ const { data, encoding, recordType } = record
         const text = textDecoder.decode(data)
         console.log(`data-on-NFC: ${text}`)
 }
-document.getElementById("logininfo").innerText("data:"+text)
+document.getElementById("datainfo").innerText("data:"+text)
 
 const writeText = async(text) => {
   try {
